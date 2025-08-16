@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FormeAI - AI 기반 SNS 마케팅으로 비용 50% 절약, 3일 만에 시작하세요. 차세대 스마트 마케팅 솔루션">
+    <meta name="keywords" content="AI 마케팅, SNS 마케팅, 디지털 마케팅, 마케팅 자동화, FormeAI">
+    <meta name="author" content="FormeAI">
+    <meta property="og:title" content="FormeAI - AI 기반 스마트 SNS 마케팅">
+    <meta property="og:description" content="비용 50% 절약, 3일 만에 시작하는 AI SNS 마케팅 솔루션">
+    <meta property="og:type" content="website">
+    <title>FormeAI - AI가 만드는 스마트한 SNS 마케팅</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-pretendard antialiased">
+    <!-- Header Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-bold text-xl text-primary-blue">FormeAI</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="nav-link">서비스</a>
+                    <a href="#features" class="nav-link">기능</a>
+                    <a href="#process" class="nav-link">프로세스</a>
+                    <a href="#testimonials" class="nav-link">고객사례</a>
+                    <a href="#contact" class="nav-link">상담신청</a>
+                </div>
+                <button class="md:hidden hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden mobile-menu hidden">
+                <div class="pt-4 pb-2 space-y-2">
+                    <a href="#services" class="block nav-link">서비스</a>
+                    <a href="#features" class="block nav-link">기능</a>
+                    <a href="#process" class="block nav-link">프로세스</a>
+                    <a href="#testimonials" class="block nav-link">고객사례</a>
+                    <a href="#contact" class="block nav-link">상담신청</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center bg-gradient-to-br from-primary-blue to-secondary-blue text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Mobile Headlines -->
+                <h1 class="hero-title block md:hidden">
+                    <span class="block text-4xl md:text-6xl font-bold mb-2">AI가 만드는</span>
+                    <span class="block text-4xl md:text-6xl font-bold mb-2">스마트한 SNS 마케팅</span>
+                    <span class="block text-3xl md:text-5xl font-bold mb-2 text-accent-orange">비용 50% 절약,</span>
+                    <span class="block text-3xl md:text-5xl font-bold text-accent-orange">시작은 3일 만에</span>
+                </h1>
+                
+                <!-- Desktop Headlines -->
+                <h1 class="hero-title hidden md:block">
+                    <span class="block text-5xl lg:text-6xl font-bold mb-4">AI가 만드는 스마트한 SNS 마케팅</span>
+                    <span class="block text-4xl lg:text-5xl font-bold text-accent-orange">비용은 50% 절약하고, 시작은 3일 만에</span>
+                </h1>
+
+                <!-- Mobile Subtitle -->
+                <p class="hero-subtitle block md:hidden text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                    <span class="block">기존 마케팅 대비</span>
+                    <span class="block">절반의 비용으로,</span>
+                    <span class="block">3배 빠른 실행력을 경험하세요.</span>
+                    <br>
+                    <span class="block">FormeAI가 제공하는</span>
+                    <span class="block">차세대 SNS 마케팅 솔루션으로</span>
+                    <span class="block">더 스마트하게 성장하세요.</span>
+                </p>
+
+                <!-- Desktop Subtitle -->
+                <p class="hero-subtitle hidden md:block text-xl lg:text-2xl text-gray-200 mb-12 leading-relaxed">
+                    기존 마케팅 대비 절반의 비용으로, 3배 빠른 실행력을 경험하세요.<br>
+                    FormeAI가 제공하는 차세대 SNS 마케팅 솔루션으로 더 스마트하게 성장하세요.
+                </p>
+
+                <a href="#contact" class="cta-button inline-block px-8 py-4 bg-accent-orange text-white font-semibold rounded-full text-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    3일 만에 시작하기 →
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-light-cream">
+        <div class="container mx-auto px-4">
+            <!-- Mobile Title -->
+            <h2 class="section-title block md:hidden text-center mb-16">
+                <span class="block text-3xl font-bold text-dark-navy">왜 FormeAI를</span>
+                <span class="block text-3xl font-bold text-dark-navy">선택해야 할까요?</span>
+            </h2>
+            
+            <!-- Desktop Title -->
+            <h2 class="section-title hidden md:block text-center mb-16 text-4xl lg:text-5xl font-bold text-dark-navy">
+                왜 FormeAI를 선택해야 할까요?
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-4 text-dark-navy">50% 비용 절약</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• 기존 마케팅 비용의 절반으로 더 큰 효과</li>
+                        <li>• AI 자동화로 인건비와 운영비 대폭 절감</li>
+                        <li>• 투명한 비용 구조로 예산 관리 최적화</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-4 text-dark-navy">3일 초고속 시작</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• 업계 평균 1주일 → FormeAI는 단 3일</li>
+                        <li>• 즉시 시작 가능한 AI 기반 자동 셋업</li>
+                        <li>• 기다림 없는 즉각적인 마케팅 효과</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-4 text-dark-navy">최첨단 AI 마케팅</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• 데이터 기반 타겟팅으로 정확한 고객 도달</li>
+                        <li>• 실시간 성과 분석 및 최적화</li>
+                        <li>• 24/7 자동 운영으로 놓치는 기회 없음</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Mobile Title -->
+            <h2 class="section-title block md:hidden text-center mb-16">
+                <span class="block text-3xl font-bold text-dark-navy">AI가 바꾸는</span>
+                <span class="block text-3xl font-bold text-dark-navy">SNS 마케팅의 새로운 기준</span>
+            </h2>
+            
+            <!-- Desktop Title -->
+            <h2 class="section-title hidden md:block text-center mb-16 text-4xl lg:text-5xl font-bold text-dark-navy">
+                AI가 바꾸는 SNS 마케팅의 새로운 기준
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="feature-card text-center p-6">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="text-lg font-bold mb-3 text-dark-navy">스마트 타겟팅</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="block md:hidden">AI가 분석한 고객 데이터로 정확한 타겟 설정. 불필요한 광고비 없이 진짜 고객에게만 도달합니다.</span>
+                        <span class="hidden md:block">AI가 분석한 고객 데이터로 정확한 타겟 설정. 불필요한 광고비 없이 진짜 고객에게만 도달합니다.</span>
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card text-center p-6">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="text-lg font-bold mb-3 text-dark-navy">실시간 최적화</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="block md:hidden">성과 데이터를 실시간으로 분석하여 광고를 자동 최적화. 인간보다 빠르고 정확한 의사결정을 제공합니다.</span>
+                        <span class="hidden md:block">성과 데이터를 실시간으로 분석하여 광고를 자동 최적화. 인간보다 빠르고 정확한 의사결정을 제공합니다.</span>
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card text-center p-6">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="text-lg font-bold mb-3 text-dark-navy">자동화 워크플로우</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="block md:hidden">콘텐츠 생성부터 포스팅까지 모든 과정을 자동화. 마케터는 전략에만 집중할 수 있습니다.</span>
+                        <span class="hidden md:block">콘텐츠 생성부터 포스팅까지 모든 과정을 자동화. 마케터는 전략에만 집중할 수 있습니다.</span>
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card text-center p-6">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="text-lg font-bold mb-3 text-dark-navy">인사이트 리포팅</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="block md:hidden">복잡한 데이터를 직관적인 인사이트로 변환. 다음 마케팅 전략을 위한 명확한 방향을 제시합니다.</span>
+                        <span class="hidden md:block">복잡한 데이터를 직관적인 인사이트로 변환. 다음 마케팅 전략을 위한 명확한 방향을 제시합니다.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="process" class="py-20 bg-light-cream">
+        <div class="container mx-auto px-4">
+            <!-- Mobile Title -->
+            <h2 class="section-title block md:hidden text-center mb-16">
+                <span class="block text-3xl font-bold text-dark-navy">단 3일이면</span>
+                <span class="block text-3xl font-bold text-dark-navy">충분합니다</span>
+            </h2>
+            
+            <!-- Desktop Title -->
+            <h2 class="section-title hidden md:block text-center mb-16 text-4xl lg:text-5xl font-bold text-dark-navy">
+                단 3일이면 충분합니다
+            </h2>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="process-step text-center relative">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">📋</div>
+                        <h3 class="text-lg font-bold mb-3 text-dark-navy">1일차: 상담 & 분석</h3>
+                        <p class="text-gray-600 text-sm">
+                            <span class="block md:hidden">비즈니스 목표와 현재 상황을 분석하고 맞춤 전략을 수립합니다.</span>
+                            <span class="hidden md:block">비즈니스 목표와 현재 상황을 분석하고 맞춤 전략을 수립합니다.</span>
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step text-center relative">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">⚙️</div>
+                        <h3 class="text-lg font-bold mb-3 text-dark-navy">2일차: AI 셋업 & 설정</h3>
+                        <p class="text-gray-600 text-sm">
+                            <span class="block md:hidden">AI 시스템을 귀하의 비즈니스에 맞게 설정하고 최적화합니다.</span>
+                            <span class="hidden md:block">AI 시스템을 귀하의 비즈니스에 맞게 설정하고 최적화합니다.</span>
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step text-center relative">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">🚀</div>
+                        <h3 class="text-lg font-bold mb-3 text-dark-navy">3일차: 캠페인 런칭</h3>
+                        <p class="text-gray-600 text-sm">
+                            <span class="block md:hidden">모든 준비 완료! 귀하의 SNS 마케팅이 시작됩니다.</span>
+                            <span class="hidden md:block">모든 준비 완료! 귀하의 SNS 마케팅이 시작됩니다.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Comparison -->
+                <div class="text-center mt-12 p-6 bg-white rounded-xl shadow-lg">
+                    <p class="comparison-text block md:hidden text-lg font-semibold text-gray-700">
+                        <span class="block text-red-500">기존 업체: 1주일 이상 소요</span>
+                        <span class="block text-2xl text-gray-400 my-2">↓</span>
+                        <span class="block text-primary-blue">FormeAI: 단 3일</span>
+                    </p>
+                    <p class="comparison-text hidden md:block text-xl font-semibold text-gray-700">
+                        <span class="text-red-500">기존 업체: 1주일 이상 소요</span>
+                        <span class="text-gray-400 mx-4">→</span>
+                        <span class="text-primary-blue">FormeAI: 단 3일</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Mobile Title -->
+            <h2 class="section-title block md:hidden text-center mb-16">
+                <span class="block text-3xl font-bold text-dark-navy">고객들이 경험한</span>
+                <span class="block text-3xl font-bold text-dark-navy">FormeAI의 차이</span>
+            </h2>
+            
+            <!-- Desktop Title -->
+            <h2 class="section-title hidden md:block text-center mb-16 text-4xl lg:text-5xl font-bold text-dark-navy">
+                고객들이 경험한 FormeAI의 차이
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gradient-to-br from-primary-blue to-secondary-blue text-white rounded-xl p-8 shadow-lg">
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">"정말 3일 만에 시작됐어요!"</h3>
+                    </div>
+                    <blockquote class="text-sm leading-relaxed mb-4 italic">
+                        <span class="block md:hidden">
+                            "다른 업체들은 초기 세팅에만 1-2주가 걸린다고 했는데, FormeAI는 정말 3일 만에 캠페인이 시작됐습니다. 결과도 기존 대비 200% 향상됐어요."
+                        </span>
+                        <span class="hidden md:block">
+                            "다른 업체들은 초기 세팅에만 1-2주가 걸린다고 했는데, FormeAI는 정말 3일 만에 캠페인이 시작됐습니다. 결과도 기존 대비 200% 향상됐어요."
+                        </span>
+                    </blockquote>
+                    <cite class="text-xs opacity-90">— 김○○ 대표, 온라인 쇼핑몰</cite>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gradient-to-br from-secondary-blue to-purple-600 text-white rounded-xl p-8 shadow-lg">
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">"비용 절약이 이렇게 클 줄 몰랐어요"</h3>
+                    </div>
+                    <blockquote class="text-sm leading-relaxed mb-4 italic">
+                        <span class="block md:hidden">
+                            "마케팅 비용이 절반으로 줄었는데 오히려 효과는 더 좋아졌어요. AI가 이렇게 똑똑할 줄 몰랐습니다."
+                        </span>
+                        <span class="hidden md:block">
+                            "마케팅 비용이 절반으로 줄었는데 오히려 효과는 더 좋아졌어요. AI가 이렇게 똑똑할 줄 몰랐습니다."
+                        </span>
+                    </blockquote>
+                    <cite class="text-xs opacity-90">— 이○○ 마케터, IT 스타트업</cite>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gradient-to-br from-purple-600 to-accent-orange text-white rounded-xl p-8 shadow-lg">
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">"24시간 자동 운영이 최고예요"</h3>
+                    </div>
+                    <blockquote class="text-sm leading-relaxed mb-4 italic">
+                        <span class="block md:hidden">
+                            "밤낮없이 AI가 알아서 최적화해주니까 저는 전략 세우는 데만 집중할 수 있어요. 진짜 게임 체인저입니다."
+                        </span>
+                        <span class="hidden md:block">
+                            "밤낮없이 AI가 알아서 최적화해주니까 저는 전략 세우는 데만 집중할 수 있어요. 진짜 게임 체인저입니다."
+                        </span>
+                    </blockquote>
+                    <cite class="text-xs opacity-90">— 박○○ CMO, 뷰티 브랜드</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-dark-navy to-primary-blue text-white">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Mobile Title -->
+            <h2 class="section-title block md:hidden mb-8">
+                <span class="block text-3xl font-bold">지금 시작하면</span>
+                <span class="block text-3xl font-bold">3일 후 결과를</span>
+                <span class="block text-3xl font-bold">확인할 수 있습니다</span>
+            </h2>
+            
+            <!-- Desktop Title -->
+            <h2 class="section-title hidden md:block mb-8 text-4xl lg:text-5xl font-bold">
+                지금 시작하면 3일 후 결과를 확인할 수 있습니다
+            </h2>
+
+            <!-- Mobile Subtitle -->
+            <p class="block md:hidden text-lg mb-12 text-gray-200 leading-relaxed">
+                <span class="block">더 이상 기다리지 마세요.</span>
+                <span class="block">AI 기반 SNS 마케팅의</span>
+                <span class="block">혁신을 경험해보세요.</span>
+                <br>
+                <span class="block">비용은 절반으로,</span>
+                <span class="block">시작은 3배 빠르게.</span>
+            </p>
+
+            <!-- Desktop Subtitle -->
+            <p class="hidden md:block text-xl mb-12 text-gray-200 leading-relaxed">
+                더 이상 기다리지 마세요. AI 기반 SNS 마케팅의 혁신을 경험해보세요.<br>
+                비용은 절반으로, 시작은 3배 빠르게.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <a href="mailto:contact@formeai.org" class="cta-button-primary block md:inline-block px-8 py-4 bg-accent-orange text-white font-semibold rounded-full text-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <span class="block md:hidden">무료 상담<br>신청하기<br>contact@formeai.org</span>
+                    <span class="hidden md:block">무료 상담 신청하기<br>contact@formeai.org</span>
+                </a>
+                <button class="cta-button-secondary px-8 py-4 border-2 border-white text-white font-semibold rounded-full text-lg hover:bg-white hover:text-dark-navy transition-all duration-300">
+                    3일 시작 프로세스<br>자세히 보기
+                </button>
+            </div>
+
+            <!-- Benefits -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="benefit-item">
+                    <div class="text-2xl mb-2">📞</div>
+                    <p class="font-semibold">
+                        <span class="block md:hidden">상담 후 3일 내<br>캠페인 시작 보장</span>
+                        <span class="hidden md:block">상담 후 3일 내 캠페인 시작 보장</span>
+                    </p>
+                </div>
+                <div class="benefit-item">
+                    <div class="text-2xl mb-2">💰</div>
+                    <p class="font-semibold">첫 달 50% 할인 혜택</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="text-2xl mb-2">⏰</div>
+                    <p class="font-semibold">24시간 내 상담 답변</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-navy text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-2">FormeAI</h3>
+                    <p class="text-gray-400">AI 기반 스마트 마케팅 솔루션</p>
+                </div>
+
+                <!-- Mobile Core Values -->
+                <div class="block md:hidden space-y-4 mb-8">
+                    <div class="core-value">⚡ <strong>3일 초고속 시작</strong></div>
+                    <div class="core-value">💰 <strong>50% 비용 절약</strong></div>
+                    <div class="core-value">🤖 <strong>24/7 AI 자동화</strong></div>
+                    <div class="core-value">📊 <strong>실시간 성과 최적화</strong></div>
+                </div>
+
+                <!-- Desktop Core Values -->
+                <div class="hidden md:block mb-8">
+                    <div class="flex justify-center space-x-8 text-sm">
+                        <span class="core-value">⚡ <strong>3일 초고속 시작</strong></span>
+                        <span class="text-gray-400">|</span>
+                        <span class="core-value">💰 <strong>50% 비용 절약</strong></span>
+                        <span class="text-gray-400">|</span>
+                        <span class="core-value">🤖 <strong>24/7 AI 자동화</strong></span>
+                        <span class="text-gray-400">|</span>
+                        <span class="core-value">📊 <strong>실시간 성과 최적화</strong></span>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info mb-8 text-sm">
+                    <p><strong>이메일</strong>: contact@formeai.org</p>
+                    <p><strong>상담시간</strong>: 평일 9:00-18:00</p>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400 text-sm">© 2025 FormeAI. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
